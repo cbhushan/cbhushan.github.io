@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Github io</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <link href="matlab-highlighter-1.55.css" rel="stylesheet" type="text/css">
+    <script>
+      (function(){var g=function(a){if(a&&a.stopPropagation)a.stopPropagation();else window.event.cancelBubble=true;var b=a?a:window.event;b.preventDefault&&b.preventDefault()},d=function(a,c,b){if(a.addEventListener)a.addEventListener(c,b,false);else a.attachEvent&&a.attachEvent("on"+c,b)},a=function(c,a){var b=new RegExp("(^| )"+a+"( |$)");return b.test(c.className)?true:false},j=function(b,c,d){if(!a(b,c))if(b.className=="")b.className=c;else if(d)b.className=c+" "+b.className;else b.className+=" "+c},h=function(a,b){var c=new RegExp("(^| )"+b+"( |$)");a.className=a.className.replace(c,"$1");a.className=a.className.replace(/ $/,"")},e=function(){var b=window.location.pathname;if(b.indexOf("/")!=-1)b=b.split("/");var a=b[b.length-1]||"root";if(a.indexOf(".")!=-1)a=a.substring(0,a.indexOf("."));if(a>20)a=a.substring(a.length-19);return a},c="mi"+e(),b=function(b,a){this.g(b,a)};b.prototype={h:function(){var b=new RegExp(c+this.a+"=(\\d+)"),a=document.cookie.match(b);return a?a[1]:this.i()},i:function(){for(var b=0,c=this.b.length;b<c;b++)if(a(this.b[b].parentNode,"selected"))return b;return 0},j:function(b,d){var c=document.getElementById(b.TargetId);if(!c)return;this.l(c);for(var a=0;a<this.b.length;a++)if(this.b[a]==b){j(b.parentNode,"selected");d&&this.d&&this.k(this.a,a)}else h(this.b[a].parentNode,"selected")},k:function(a,b){document.cookie=c+a+"="+b+"; path=/"},l:function(b){for(var a=0;a<this.c.length;a++)this.c[a].style.display=this.c[a].id==b.id?"block":"none"},m:function(){this.c=[];for(var c=this,a=0;a<this.b.length;a++){var b=document.getElementById(this.b[a].TargetId);if(b){this.c.push(b);d(this.b[a],"click",function(b){var a=this;if(a===window)a=window.event.srcElement;c.j(a,1);g(b);return false})}}},g:function(f,h){this.a=h;this.b=[];for(var e=f.getElementsByTagName("a"),i=/#([^?]+)/,a,b,c=0;c<e.length;c++){b=e[c];a=b.getAttribute("href");if(a.indexOf("#")==-1)continue;else{var d=a.match(i);if(d){a=d[1];b.TargetId=a;this.b.push(b)}else continue}}var g=f.getAttribute("data-persist")||"";this.d=g.toLowerCase()=="true"?1:0;this.m();this.n()},n:function(){var a=this.d?parseInt(this.h()):this.i();if(a>=this.b.length)a=0;this.j(this.b[a],0)}};var k=[],i=function(e){var b=false;function a(){if(b)return;b=true;setTimeout(e,4)}if(document.addEventListener)document.addEventListener("DOMContentLoaded",a,false);else if(document.attachEvent){try{var f=window.frameElement!=null}catch(g){}if(document.documentElement.doScroll&&!f){function c(){if(b)return;try{document.documentElement.doScroll("left");a()}catch(d){setTimeout(c,10)}}c()}document.attachEvent("onreadystatechange",function(){document.readyState==="complete"&&a()})}d(window,"load",a)},f=function(){for(var d=document.getElementsByTagName("ul"),c=0,e=d.length;c<e;c++)a(d[c],"tabs")&&k.push(new b(d[c],c))};i(f);return{}})()
+</script>
+<script>
+function highlightMATLABCode(d){function g(i){return(i>="A"&&i<="Z")||(i>="a"&&i<="z")||(i==")")}function m(r,j,i){var s=j.index,t;while(s>=i){t=r.charAt(--s);if(t=="\n"){break}if(t=="'"){continue}else{return !g(t)}}return true}function a(i){var j=i.length-1,r;while(j>0){r=i.charAt(--j);if(r=="\n"){return true}if(r=="%"){return false}}return true}function n(t){var s,u=0,r,v=/(\'[^\'\n]*\')/gi,j=[];while(s=v.exec(t)){if(m(t,s,u)){var w=t.slice(u,s.index);for(var i=j.length-2;i>=0;i-=2){if(w.indexOf("\n")>-1){break}w=w.concat(j[i])}if(a(w)){r=s.index+s[1].length;j.push(t.slice(u,s.index));j.push(t.slice(s.index,r));u=r}}}j.push(t.slice(u));return j}function b(u,j){var w='<span class="',v="</span>";if(j){return[w,'matlab-string">',u,v].join("")}else{var t=[{r:/\b('|break|case|catch|classdef|continue|else|elseif|end|for|function|global|if|otherwise|parfor|persistent|return|spmd|switch|try|while|')\b/gi,s:"keyword"},{r:/\b([0-9]+)\b/gi,s:"number"},{r:/([(){}\[\]]+)/gi,s:"bracket"},{r:/(%[^\n]*)/gi,s:"comment"}];for(var r=0,s=t.length;r<s;r++){u=u.replace(t[r].r,[w,"matlab-",t[r].s,'">$1',v].join(""))}return u}}function q(u){var w=[],s=[];if(typeof u==="undefined"){u={tagPre:true,tagCode:false,className:"matlab-code"}}if(typeof u!=="object"){w.push(document.getElementById(u))}else{if(u.tagCode){s.push("code")}if(u.tagPre){s.push("pre")}for(var t=0;t<s.length;t++){var x=document.getElementsByTagName(s[t]);for(var r=0,v=x.length;r<v;r++){if((u.className=="")||((x[r].className.toString().length>0)&&((" "+x[r].className+" ").indexOf(" "+u.className+" ")>-1))){w.push(x[r])}}}}return w}var p=q(d);for(var f=0,o=p.length;f<o;f++){var c=n(p[f].innerHTML.toString().replace(/<br\s*\/?>/mg,"\n")),h=[],l="&nbsp;";for(var e=0,k=c.length;e<k;e++){h.push(b(c[e],e%2))}p[f].innerHTML=h.join("").replace(/^[ ]/gm,l).replace(/\n/gm,"<br>").replace(/\t/gm,l+l)}}; /*"*/
+</script>
+    <style>	
+      ul.tabs{padding:14px 0 8px;margin:0;font-size:0;list-style-type:none;text-align:left;background:#DDDDE3;border:1px solid #CCC;border-bottom:none;border-radius:2px 2px 0 0}
+      ul.tabs li{display:inline;margin:0;margin-right:2px;font:normal 12px Verdana}
+      ul.tabs li a{text-decoration:none;position:relative;padding:8px 22px;color:#000;border-radius:3px 3px 0 0;outline:none;font-size:105%;}
+      ul.tabs li a:hover{text-decoration:underline;color:#000}
+      ul.tabs li.selected a{position:relative;top:0;font-weight:700;font-size:120%;background:#FFF;border:1px solid #AAA;border-bottom:1px solid #FFF;color:#000}
+      ul.tabs li.selected a:hover,ul.tabs li.selected a:hover{text-decoration:none}
+      div.tabcontents{border:1px solid #CCC;padding:30px;border-top-color:#AAA;background-color:#FFF;border-radius:0 0 2px 2px}
+      tt,code,li.code{font-family:Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;color:#000;}
+      tt {color: #800;}
+      code {margin:0 0; border:1px dashed #CCC;padding:12px;display: block;background-color: #F4F5F7;overflow: auto;white-space: pre;}
+      div.footer{font-size:70%;margin:10px 0 5px 0;text-align:center}
+      pre .matlab-keyword, code .matlab-keyword {color: #008; font-weight: bold;}
+      pre .matlab-string,  code .matlab-string  {color: #880;}
+      pre .matlab-number,  code .matlab-number  {color: #800;}
+      pre .matlab-bracket, code .matlab-bracket {color: #808;}
+      pre .matlab-comment, code .matlab-comment {color: #080;}
+      pre .matlab-comment span, code .matlab-comment span {color: #080; font-weight: normal;}
+    </style>
+  </head>
+  <body style="background:#F6F9FC; font-family:Arial;"  onload="highlightMATLABCode({tagCode: true, tagPre: true, className: 'matlab-code'});">
+    <div style="width: 68%; margin: 0 auto; padding: 20px 0 30px;">
+      <h1>My gihub.io website</h1>
+      <ul class="tabs" data-persist="true">
+	<li><a href="#home">Home</a></li>
+	<li><a href="#tab1">Tab 1</a></li>
+	<li><a href="#tab2">Tab 2</a></li>
+      </ul>
+
+      <div class="tabcontents">
+	
+	<div id="home">
+	  <h2>What is Lorem Ipsum?</h2>
+	  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+
+ <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit quis nunc sit amet auctor. Morbi a metus augue. Donec in nulla ligula. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam magna nibh, sodales non augue accumsan, consequat viverra elit. Curabitur non mattis risus, sit amet mollis nisi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent eget felis egestas, scelerisque lorem vel, porta turpis. Morbi porttitor justo ut suscipit auctor. Nunc quam est, vestibulum quis sagittis in, molestie quis sapien. Mauris aliquam massa lectus, ut laoreet lacus condimentum ut. Mauris egestas et lectus eu hendrerit. In non sagittis nibh.
+</p>
+ 
+<p> Ut faucibus, massa sed suscipit pellentesque, turpis metus laoreet sapien, in tempus ligula urna sit amet tellus. Morbi diam velit, facilisis ac aliquam nec, mollis at nibh. Proin sit amet feugiat enim. Vestibulum ut imperdiet arcu, in faucibus nibh. Nulla nec accumsan augue, a mattis eros. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi convallis arcu accumsan lorem pretium, ut porta tellus egestas. Suspendisse venenatis congue quam, a vestibulum turpis auctor quis. </p> 
+
+<p>In eu congue eros. Etiam rutrum imperdiet pretium. Vestibulum rhoncus justo quam, eu dictum leo facilisis sed. Duis sit amet ultrices enim. Nulla condimentum libero a ultrices consectetur. Pellentesque iaculis fringilla arcu interdum dictum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas odio lorem, pulvinar at ullamcorper eget, commodo eu nisi. Suspendisse dignissim elit sapien, in sodales sapien commodo sit amet. Phasellus fermentum quam erat, vel dignissim lectus molestie sit amet.</p>
+
+ <p>Aenean egestas venenatis nisl, nec semper leo auctor a. Donec sit amet risus vehicula, lobortis odio ut, mollis nunc. Donec ullamcorper imperdiet aliquet. Donec sed cursus felis. Suspendisse volutpat neque at venenatis gravida. Ut malesuada ultricies enim at mattis. Aenean congue tempor turpis et accumsan. Aliquam eu vulputate risus.
+</p> 
+
+<p> Nulla tempor, nibh ut dignissim interdum, enim nisi scelerisque velit, in venenatis quam ligula vitae dolor. Etiam aliquam justo lectus, in mollis enim auctor id. Aenean imperdiet erat non neque fermentum, sed tempus nunc luctus. Maecenas sagittis feugiat nulla. Mauris libero neque, placerat eu commodo vel, malesuada in justo. Phasellus nec libero vulputate, commodo urna eget, eleifend urna. Donec imperdiet libero imperdiet, tempus metus ut, accumsan leo. 
+
+</p>
+	</div>	
+	
+	<div id="tab1">
+	  <h2>Where does it come from?</h2>
+	  <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+
+	  <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>	  
+	</div>
+
+	<div id="tab2">
+	  <h2>Where does it come from?</h2>
+	  <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). </p>
+	  <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+	</div>
+      </div>
+
+
+      <div class="footer">
+	Last modified: June 27, 2014
+      </div>
+
+
+    </div>
+  </body>
+</html>
