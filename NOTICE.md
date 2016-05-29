@@ -1,6 +1,16 @@
+
+[Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) was obtained under 
+MIT license. The original license is included below.
+
+---
+
+#### Minimal Mistakes Jekyll Theme
+
+https://github.com/mmistakes/minimal-mistakes/
+
 The MIT License (MIT)
 
-Copyright (c) 2016 C Bhushan
+Copyright (c) 2016 Michael Rose
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
