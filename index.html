@@ -1,292 +1,34 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>cbhushan.github.io</title>
-    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-    <link href="matlab-highlighter-1.55.css" rel="stylesheet" type="text/css">
-    <script>
-      (function(){var g=function(a){if(a&&a.stopPropagation)a.stopPropagation();else window.event.cancelBubble=true;var b=a?a:window.event;b.preventDefault&&b.preventDefault()},d=function(a,c,b){if(a.addEventListener)a.addEventListener(c,b,false);else a.attachEvent&&a.attachEvent("on"+c,b)},a=function(c,a){var b=new RegExp("(^| )"+a+"( |$)");return b.test(c.className)?true:false},j=function(b,c,d){if(!a(b,c))if(b.className=="")b.className=c;else if(d)b.className=c+" "+b.className;else b.className+=" "+c},h=function(a,b){var c=new RegExp("(^| )"+b+"( |$)");a.className=a.className.replace(c,"$1");a.className=a.className.replace(/ $/,"")},e=function(){var b=window.location.pathname;if(b.indexOf("/")!=-1)b=b.split("/");var a=b[b.length-1]||"root";if(a.indexOf(".")!=-1)a=a.substring(0,a.indexOf("."));if(a>20)a=a.substring(a.length-19);return a},c="mi"+e(),b=function(b,a){this.g(b,a)};b.prototype={h:function(){var b=new RegExp(c+this.a+"=(\\d+)"),a=document.cookie.match(b);return a?a[1]:this.i()},i:function(){for(var b=0,c=this.b.length;b<c;b++)if(a(this.b[b].parentNode,"selected"))return b;return 0},j:function(b,d){var c=document.getElementById(b.TargetId);if(!c)return;this.l(c);for(var a=0;a<this.b.length;a++)if(this.b[a]==b){j(b.parentNode,"selected");d&&this.d&&this.k(this.a,a)}else h(this.b[a].parentNode,"selected")},k:function(a,b){document.cookie=c+a+"="+b+"; path=/"},l:function(b){for(var a=0;a<this.c.length;a++)this.c[a].style.display=this.c[a].id==b.id?"block":"none"},m:function(){this.c=[];for(var c=this,a=0;a<this.b.length;a++){var b=document.getElementById(this.b[a].TargetId);if(b){this.c.push(b);d(this.b[a],"click",function(b){var a=this;if(a===window)a=window.event.srcElement;c.j(a,1);g(b);return false})}}},g:function(f,h){this.a=h;this.b=[];for(var e=f.getElementsByTagName("a"),i=/#([^?]+)/,a,b,c=0;c<e.length;c++){b=e[c];a=b.getAttribute("href");if(a.indexOf("#")==-1)continue;else{var d=a.match(i);if(d){a=d[1];b.TargetId=a;this.b.push(b)}else continue}}var g=f.getAttribute("data-persist")||"";this.d=g.toLowerCase()=="true"?1:0;this.m();this.n()},n:function(){var a=this.d?parseInt(this.h()):this.i();if(a>=this.b.length)a=0;this.j(this.b[a],0)}};var k=[],i=function(e){var b=false;function a(){if(b)return;b=true;setTimeout(e,4)}if(document.addEventListener)document.addEventListener("DOMContentLoaded",a,false);else if(document.attachEvent){try{var f=window.frameElement!=null}catch(g){}if(document.documentElement.doScroll&&!f){function c(){if(b)return;try{document.documentElement.doScroll("left");a()}catch(d){setTimeout(c,10)}}c()}document.attachEvent("onreadystatechange",function(){document.readyState==="complete"&&a()})}d(window,"load",a)},f=function(){for(var d=document.getElementsByTagName("ul"),c=0,e=d.length;c<e;c++)a(d[c],"tabs")&&k.push(new b(d[c],c))};i(f);return{}})()
-</script>
-<script>
-function highlightMATLABCode(d){function g(i){return(i>="A"&&i<="Z")||(i>="a"&&i<="z")||(i==")")}function m(r,j,i){var s=j.index,t;while(s>=i){t=r.charAt(--s);if(t=="\n"){break}if(t=="'"){continue}else{return !g(t)}}return true}function a(i){var j=i.length-1,r;while(j>0){r=i.charAt(--j);if(r=="\n"){return true}if(r=="%"){return false}}return true}function n(t){var s,u=0,r,v=/(\'[^\'\n]*\')/gi,j=[];while(s=v.exec(t)){if(m(t,s,u)){var w=t.slice(u,s.index);for(var i=j.length-2;i>=0;i-=2){if(w.indexOf("\n")>-1){break}w=w.concat(j[i])}if(a(w)){r=s.index+s[1].length;j.push(t.slice(u,s.index));j.push(t.slice(s.index,r));u=r}}}j.push(t.slice(u));return j}function b(u,j){var w='<span class="',v="</span>";if(j){return[w,'matlab-string">',u,v].join("")}else{var t=[{r:/\b('|break|case|catch|classdef|continue|else|elseif|end|for|function|global|if|otherwise|parfor|persistent|return|spmd|switch|try|while|')\b/gi,s:"keyword"},{r:/\b([0-9]+)\b/gi,s:"number"},{r:/([(){}\[\]]+)/gi,s:"bracket"},{r:/(%[^\n]*)/gi,s:"comment"}];for(var r=0,s=t.length;r<s;r++){u=u.replace(t[r].r,[w,"matlab-",t[r].s,'">$1',v].join(""))}return u}}function q(u){var w=[],s=[];if(typeof u==="undefined"){u={tagPre:true,tagCode:false,className:"matlab-code"}}if(typeof u!=="object"){w.push(document.getElementById(u))}else{if(u.tagCode){s.push("code")}if(u.tagPre){s.push("pre")}for(var t=0;t<s.length;t++){var x=document.getElementsByTagName(s[t]);for(var r=0,v=x.length;r<v;r++){if((u.className=="")||((x[r].className.toString().length>0)&&((" "+x[r].className+" ").indexOf(" "+u.className+" ")>-1))){w.push(x[r])}}}}return w}var p=q(d);for(var f=0,o=p.length;f<o;f++){var c=n(p[f].innerHTML.toString().replace(/<br\s*\/?>/mg,"\n")),h=[],l="&nbsp;";for(var e=0,k=c.length;e<k;e++){h.push(b(c[e],e%2))}p[f].innerHTML=h.join("").replace(/^[ ]/gm,l).replace(/\n/gm,"<br>").replace(/\t/gm,l+l)}}; /*"*/
-</script>
-    <style>	
-      ul.tabs{padding:14px 0 8px;margin:0;font-size:0;list-style-type:none;text-align:left;background:#DDDDE3;border:1px solid #CCC;border-bottom:none;border-radius:2px 2px 0 0}
-      ul.tabs li{display:inline;margin:0;margin-right:2px;font:normal 12px Verdana}
-      ul.tabs li a{text-decoration:none;position:relative;padding:8px 22px;color:#000;border-radius:3px 3px 0 0;outline:none;font-size:105%;}
-      ul.tabs li a:hover{text-decoration:underline;color:#000}
-      ul.tabs li.selected a{position:relative;top:0;font-weight:700;font-size:120%;background:#FFF;border:1px solid #AAA;border-bottom:1px solid #FFF;color:#000}
-      ul.tabs li.selected a:hover,ul.tabs li.selected a:hover{text-decoration:none}
-      div.tabcontents{border:1px solid #CCC;padding:30px;border-top-color:#AAA;background-color:#FFF;border-radius:0 0 2px 2px}
-      tt,code,li.code{font-family:Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;color:#000;}
-      tt {color: #800;}
-      code {margin:0 0; border:1px dashed #CCC;padding:12px;display: block;background-color: #F4F5F7;overflow: auto;white-space: pre;}
-      div.footer{font-size:70%;margin:10px 0 5px 0;text-align:center}
-      pre .matlab-keyword, code .matlab-keyword {color: #008; font-weight: bold;}
-      pre .matlab-string,  code .matlab-string  {color: #880;}
-      pre .matlab-number,  code .matlab-number  {color: #800;}
-      pre .matlab-bracket, code .matlab-bracket {color: #808;}
-      pre .matlab-comment, code .matlab-comment {color: #080;}
-      pre .matlab-comment span, code .matlab-comment span {color: #080; font-weight: normal;}
-    </style>
-  </head>
-  <body style="background:#F6F9FC; font-family:Arial;"  onload="highlightMATLABCode({tagCode: true, tagPre: true, className: 'matlab-code'});">
-    <div style="width: 68%; margin: 0 auto; padding: 20px 0 30px;">
-      <h1>cbhushan.github.io</h1>
-      <ul class="tabs" data-persist="true">
-	<li><a href="#home">Home</a></li>
-	<li><a href="#tab2">Markov random text</a></li>
-	<li><a href="#tab3">Random text - 2</a></li>
-      </ul>
+---
+layout: splash
+date: 2016-05-07
+---
 
-      <div class="tabcontents">
-	
-	<div id="home">
-	  <h2>Where am I?</h2>
-	  <p>I was testing <a href"https://pages.github.com/">GitHub Pages</a>. This webpage is result of that testing. Checkout other tabs for some interesting stuff.</p>
+{% include base_path %}
 
-	  <p>Or, else you may want to visit my current homepage instead: <a href="http://www-scf.usc.edu/~cbhushan/"><tt>http://www-scf.usc.edu/~cbhushan/</tt></a></p>
-	</div>	
-	
-	<div id="tab2">
-	  <h2>Markov random text</h2>
-	  <p>Following paragraphs are example outputs of my random text generator using a Markov process. It was developed as part of <a href="http://scf.usc.edu/~csci455/curr/assgts/pa4/pa4.html">a programming assignment</a> in <a href="http://scf.usc.edu/~csci455/">CSCI 455 course</a> at USC. The text was generated by learning the markov process from <a href="http://www.gutenberg.org/ebooks/1661">The Adventures of Sherlock Holmes by Arthur Conan Doyle</a>.<br/><br/><br/> </p>
-
-	  <p>through the open window, endeavoured in every way that they should make their
-position a little clearer both to the general public and to Lord St. Simon. It
-was only by paying over all the money which I could possibly need, so there is
-little which you need tell me. Still, that little may as well face the matter,'
-said I; 'you have been caught in the act, and no confession could make your
-guilt more heinous. If you but make such reparation as is in your power, by
-telling us where the beryls are, all shall be forgiven and forgotten.' "'Keep
-your forgiveness for those who ask for it,' he answered, turning away from me
-with a greater sense of grief than the banker had done in the matter. I have the
-honour to bear"--he gave a little stately cough--"had not I thought her to be a
-morose and silent man, but I could distinguish the outline of an instep where
-the wet foot had been placed at our disposal, and I was walking down the street
-with Sherlock Holmes. For two streets he shuffled along with a bent back and an
-uncertain foot. Then, glancing quickly round, he straightened himself out and
-burst into a hearty fit of laughter. "I suppose, Watson," said he, "but I have
-felt another man since the doctor bandaged me, and I think that what he foresaw
-happened." "But you have no doubt that she has not sent it yet?" "I am sure."
-"And why?"</p>
-
-<p>"Because she has said that she had written a note before leaving home
-but after being fully dressed. You observed that her right glove was torn at the
-forefinger, but you did not hear it also.' "'Ah, but I sleep more heavily than
-you.' "'Well, it is of some little use," he remarked. "'L'homme c'est
-rien--l'oeuvre c'est tout,' as Gustave Flaubert wrote to George Sand." ADVENTURE
-III. A CASE OF IDENTITY "My dear fellow," said Sherlock Holmes rather sternly.
-"Owe!" He caught up a pen. "Name the sum, and I will not, believe it!" cried the
-banker with a gesture of despair. "If his motives were innocent, why does he
-pursue this unhappy family?" Sherlock Holmes closed his eyes and forehead. "He's
-a beauty, isn't he?" said the inspector. "He certainly needs a wash," remarked
-Holmes. "I had an idea that he was all I had to love. I could not confide it to
-an agent without putting myself in his armchair amid his improvisations and his
-black-letter editions. Then it was that of none other than--well, perhaps even
-to you I had better postpone my analysis of the acetones, as we may need to be
-at St. Saviour's, near King's Cross, and we were engaged upon our toast and
-coffee in the drawing-room that night after dinner, I told Arthur and Mary my
-experience, and of the unpleasant night which seemed to us to be probable in
-your rooms at Baker Street. "Why," said I, glancing up at my companion, "that
-was surely the bell. Who could come to-night? Some friend of yours, perhaps?"
-"Except yourself I have none," he answered. "I do not know what to do, so I came
-home and roused its snakish temper, so that it flew upon the first person it
-saw. In this way I am no doubt indirectly responsible for Dr. Grimesby Roylott's
-death, and I cannot say that it has been recently cut, and that he was a
-prisoner, he remarked that he was deeply moved. "</p>
-
-<p>My eye caught the name of
-Openshaw, and the heading 'Tragedy Near Waterloo Bridge.' Here is the stone; the
-stone came from the goose, and the goose came from Mr. Henry Baker, the
-gentleman with the bad hat and all the proofs which I could do to distinguish
-the words: "The least sound would be fatal to our plans." I nodded to show that
-I had my man, so I came straight to you." That was always the way. Folk who were
-in grief came to my wife as an old friend of his, Major Freebody, who is in a
-German-speaking country--in Bohemia, not far from Carlsbad. 'Remarkable as being
-the scene of the struggle. How cruelly I have misjudged him!" "When I arrived at
-the house," continued Holmes, "I at once went very carefully round it to observe
-if there were any traces in the snow in front of the house. There were four of
-them in a row, three of which were open. They each led into an empty room, dusty
-and cheerless, with two windows in the one dreadful shriek. They say that away
-down in the corner of the ceiling, the blue smoke curling up from the hall onto
-the stable lane. So long was he that his hat actually brushed the cross bar of
-the doorway, and his breadth seemed to span it across from side to side. A large
-face, seared with a thousand wrinkles, burned yellow with the sun, and marked
-with every evil passion, was turned from one to the other of us, and finally,
-with a woman's quick insight into character. "And now there is only one feasible
-explanation. You have been reading the papers diligently of late, have you not?"
-"It looks like it," said I ruefully, pointing to a cluster of roofs some
-distance to the left; "but if you want to get to the fringe of the belt of
-suburban villas, when he shook himself, shrugged his shoulders, and said there
-was no shaking them off, and there they have lived rent free on my best land
-ever since. There was no sign of the stone, and I knew that he was in a
-disputatious rather than a meditative mood--"you have erred perhaps in
-attempting to put colour and life into each of your statements instead of
-confining yourself to the task of placing upon record that severe reasoning from
-cause to effect which is really the end of our quest,</p>	  
-
-	</div>
-
-	<div id="tab3">
-	  <h2>Random text - 2</h2>
-
-	  <p>Some more random text generated by learning the markov process from <a href="http://www.gutenberg.org/ebooks/1400">Great Expectations by Charles Dickens</a>.<br/><br/><br/></p>
-	 
-<p>that Love was commonly reputed blind, but for the unnatural strain upon me that
-to-morrow was. So anxiously looked forward to, charged with such consequences,
-its results so impenetrably hidden, though so near. No precaution could have
-been no dispute about them, because my sister was fully prepared to restore
-them. Besides, there had been some light snow, overnight, and it lay nowhere
-else to my knowledge; but, it had not quite finished dressing, for she had never
-yet gone there without me; when was she coming back? There was an air of injury.
-"Now, do it look like it?" I asked him where the ships he insured mostly traded
-to at present? "I haven't begun insuring yet," he replied. "I am looking about
-me." "Is a counting-house profitable?" I asked. "To--do you mean to keep that
-name?" "Why, yes, dear boy, it's as good as adopted me, and it could not fail to
-be her enemy and destroyer, and she must always turn against it, for it sounded
-a large sum. "Nine hundred pounds." "If I give you a reason for her being
-beforehand assigned to me. Sending her out to attract and torment and do
-mischief, Miss Havisham sent us two out to walk in the streets, and whenever
-that happened he talked louder to me; but I believe Old Clem stood in that
-relation towards me, and I held her hand to my lips some lingering moments, and
-so I had an odd half-provoked sense of suspicion upon me, that if Joe had been
-put into great spirits by the expectation of seeing me publicly tortured, and
-who were much disappointed to find that my friends were merely rallying round
-me, we went back into the house, and I dined in a little difficulty, on account
-of the accident as soon as I, and was (like everybody else) afraid of him. She
-made a strong attempt to compose herself, and stammered that he was there, my
-sister was quite desperate, so she pounced on Joe, and, taking him by the hair,
-if it had been the gusts, that high buildings in town had had the lead stripped
-off their roofs; and in the gropings and pausings of the beetles on the floor.
-When I awoke without having parted in my sleep I saw the file; and when he went
-to the bottom of the boat, but we both thought of it. That was made apparent by
-our avoidance of the subject, and by our agreeing--without agreement--to make my
-recovery of the use of my hands before; but I began to contract a quantity of
-chalk about our country, and perhaps the people neglected no opportunity of
-turning it to account. </p>
-
-<p>It being Saturday night, I found the same gate open, and
-I explored the garden, and even looked in at the forge and Miss Havisham's, and
-what on that. The great city was almost new to her, she had received serious
-hurts, but that they of themselves were far from hopeless; the danger lay mainly
-in the nervous shock. By the surgeon's directions, her bed was carried into the
-house for a nap. Thus I made the best of his belief, he had a dust-colored kind
-of clothes on, under a dark cloud, than when the sun shone. That's best of all."
-He lay on his back, breathing with great difficulty. Do what he would, and love
-me though he did, the light left his face ever afterwards, as having been more
-attentive. The soldier with the basket soon got a light, and lighted three or
-four torches, and took one himself and distributed the others. It had been
-almost dark before, but now it seemed quite dark, and soon afterwards we saw
-behind it the smoke of the kitchen that nothing might be out of the Castle.
-Having thought of the fight, and recalled the pale young gentleman's teeth, and
-I twisted my imagination into a thousand tangles, as I devised incredible ways
-of accounting for that damnatory circumstance when I should go home, and what
-had happened at home, and was sitting apart among some flowers, ready to go. I
-was with her, for I almost always accompanied them to and from such places. "Are
-you tired, Estella?" "Rather, Pip." "You should be." "Say rather, I should not
-have thought of until too late,--that he need never know how sorry I had been
-Miss Havisham. But she ought to know his own business best." "I know more of the
-history of Miss Havisham's room. "Pip's rap," I heard her say to Joe in some man
-coming along the road towards me. All the others who were waiting saw him at the
-reduced price of eighteen-pence. As I declined the proposal on the plea of an
-appointment, he was so communicative, I felt that reserve on my part that was
-quite enthralling and almost painful, I saw his lighted back windows looking
-bright and quiet, and, when I stood in the dark confinement of these rooms, and
-had never taken them out in this state of existence. Ours was the marsh country,
-down by the fireside. "You made acquaintance with my son, sir," said the
-landlord. "Mr. Pumblechook." "Is he ungrateful to no one else?" "No doubt he
-would be, if he could," returned the landlord, "but he can't. And why? Because
-Pumblechook done everything for him." "Does Pumblechook say so?" "Say so!"
-replied the landlord. "He han't no call to say it was at once grave and
-rallying, "for they beset Miss Havisham with reports and insinuations to your
-disadvantage. They watch you, misrepresent you, write letters about you
-(anonymous sometimes), and you are to take care that I have seen brought up by
-hand. She was most noticeable, I thought, in respect of saving trouble; but it
-had the appearance of being insured in some extraordinary Fire Office. But I
-said he might, and he shook hands with me again, and emptied his glass and
-turned it upside down. I did the same; and if I have, the boy shall have it." He
-looked it out from a handful of loose tobacco of the kind that is called
-Negro-head. Having filled his pipe, he put the surplus tobacco back again, as if
-his pocket were a drawer. </p>
-
-<p>Then, he took a live coal from the fire with him, and
-that I hoped I should see any such new occasion as a new chance of helping in
-the discovery of that impostor of a porter mooning about Barnard's Inn, under
-pretence of compactly folding up my bank-notes for security's sake, abstracts
-the notes and gives me nutshells; but what is private, and beknown, and
-understood among friends. It ain't that I am proud, but that I could scarcely be
-withheld from going out to Gerrard Street that night. Herbert's representations
-that, if I let her go, the fire would break out again and consume her. When I
-got into the courtyard, I found Estella waiting with the keys. But she neither
-asked me where I had left for him with the functions of explainer and director
-of all my studies. He hoped that with intelligent assistance I should meet with
-little to discourage me, and should in my heart of hearts have repudiated the
-idea. Yet for all that, I remember feeling convinced that I was suspected of an
-intention to drop and choke when out of view, and kissing her hand to Miss
-Havisham, was escorted forth. Sarah Pocket and Georgiana contended who should
-remain last; but Sarah was too knowing to be outdone, and ambled round Georgiana
-with that artful slipperiness that the latter was always disposed to resent him
-as a larger species of child, and as no more than if he had never seen before,
-was the saddened, softened light of the clouded moon, I saw two men looking at
-me. I could see the other lights coming in after us. The torches we carried
-dropped great blotches of fire upon the ceiling and the wall, I saw in this, a
-reason for fighting, too. There it is!" In a most irritating end to every one of
-these was the beacon by which the sailors steered,--like an unhooped cask upon a
-pole,--an ugly thing when you were last here, and to show you that I am always
-with him to the Pumblechookian parlor. As I knew it to be so. What then, when
-that's once done? Here I am. To go back now 'ud be as bad as playing to order.
-But she answered at last, and saw that Trabb and Co. had put in a funereal
-execution and taken possession. Two dismally absurd persons, each ostentatiously
-exhibiting a crutch done up in a fair way to be read at; and he laid hold of
-him. In another minute we were outside the gate, and it was supposed to have
-brought it back. The royal phantom also carried a ghostly manuscript round its
-truncheon, to which it had the appearance of having been stolen from some court
-of justice, and perhaps his knowledge of it, if he had. This is our
-sitting-room,--just such chairs and tables and carpet and so forth, you see, as
-far as possible from the insufficient money produced, said, "it's no use, my
-boy. </p>
-
-<p>I'm only a subordinate. I can't take it. Don't go on in this way for a long
-long time. A window was raised, and a clear voice demanded "What name?" To which
-my conductor replied, "Pumblechook." The voice returned, "Quite right," and the
-window was open and gay with flowers. I went softly towards it, meaning to peep
-over the flowers, when Joe and I got up in the night,--like Camilla,--I used to
-think, with a weariness on my spirits, that I should have met somebody there,
-wandering Esquimaux or civilized man, who would have told them anything. "Where
-was this coach, in the name of Provis. He replied, certainly not, and that the
-low leaden line beyond was the river; and that the low leaden line beyond was
-the river; and that the long iron-gray hair grew only on its sides. But, I saw
-nothing that in the mere escape of a fatigued mind, I dozed for a minute, I was
-awakened by Miss Havisham's cries, and by her running at me with an unmoved
-countenance. I saw that she was equally accomplished in the terms of our trade,
-and the names of the various bridges up as high as Chelsea Reach. Let's see;
-there's London, one; Southwark, two; Blackfriars, three; Waterloo, four;
-Westminster, five; Vauxhall, six." He had checked off each bridge in its turn,
-with the handle of the article in question, retiring a step or two from my
-table, and speaking for the king, I answer, a little job done." This was
-received as rather neat in the sergeant; insomuch that Mr. Pumblechook in his
-hospitality appeared to forget that he had made an end of it. Get out of the
-heap who could be saved; whom the father believed dead, and dared make no stir
-about; as to whom, over the mother, the legal adviser had this power: "I know
-what you mean, as a form of words; but nothing more. You address nothing in my
-life that Herbert returned home one evening, a good deal of time on his hands.
-And I observed, with great surprise, that he devoted it to staring in my
-direction as if he had forgotten my being there; "did you notice anything in
-him?" "He had a badly bruised face," said I, recalling what I "used to do" when
-I was on the side of the way. But, it was only the pleasanter to turn to me
-every now and then to close and make fast the doors. While I did so, but his
-look at me more nearly, as if my last anchor were loosening its hold, and I
-should consider</p>
-	</div>
-      </div>
+{% if page.author %}
+  {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.author %}
+{% endif %}
 
 
-      <div class="footer">
-	Last modified: Apr 25, 2015
-      </div>
+<div align="center">
+  <img src="{{ "c5-home.jpg" | prepend: "/images/" | prepend: base_path }}" style="border-radius:50%;max-width:380px;" alt="{{ author.name }}">
+  <h2 class="author__name">{{ author.name }}, Ph.D.</h2>
+  <p class="author__bio">Research Scientist, <a href="http://www.geglobalresearch.com/">GE Global Research</a><br>Niskayuna, New York, USA</p>
+  <p><i class="fa fa-fw fa-envelope" aria-hidden="true"></i> Email: <img src="{{ "yqf1.png" | prepend: "/images/" | prepend: base_path }}" alt="firstname.lastname"><img src="{{ "uwg2.png" | prepend: "/images/" | prepend: base_path }}" alt="@ gmail.com"><br>
+    
+    <a class="hm1-profile" href="https://scholar.google.com/citations?user=wEBztaQAAAAJ&hl=en"><i class="ai ai-google-scholar ai-lg" aria-hidden="true"></i></a><a href="https://scholar.google.com/citations?user=wEBztaQAAAAJ&hl=en">Google Scholar</a> &nbsp;&bull;&nbsp;
+    <a class="hm1-profile" href="https://github.com/cbhushan"><i class="fa fa-lg fa-github" aria-hidden="true"></i></a><a href="https://github.com/cbhushan"> Github</a> &nbsp;&bull;&nbsp;
+    <a class="hm1-profile" href="https://www.linkedin.com/in/chitreshbhushan"><i class="fa fa-getjt5qpwq-square fa-lg" aria-hidden="true"></i></a><a href="https://www.linkedin.com/in/chitreshbhushan"> LinkedIn</a> &nbsp;&bull;&nbsp;
+    <a class="hm1-profile" href="https://plus.google.com/+ChitreshBhushan"><i class="fa fa-spa9czvez7my fa-fw" aria-hidden="true"></i></a><a href="https://plus.google.com/+ChitreshBhushan"> Google+</a>
+    
+  </p>
+</div>
 
 
-    </div>
-  </body>
-</html>
+
+
+
+
+
+
+

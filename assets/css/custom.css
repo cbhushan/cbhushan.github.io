@@ -1,0 +1,42 @@
+
+a.hm1-profile:link, a.hm1-profile:visited {
+    text-decoration: none;
+    color: #494e52;
+}
+
+a.hm1-profile:hover, a.hm1-profile:visited {
+    text-decoration: underline;
+}
+
+/* Fix for software page */
+.feature__item--left .archive__item-body {
+    padding-left: 3.23%;
+    padding-right: 0.4%;
+}
+
+.feature__item--left .archive__item-body h2 {
+    margin-top: 1.5em;
+}
+
+ul.zero-size {
+    margin: 1.0% 0 4.0% 0;
+    padding-left: 5.0%;
+}
+ul.zero-size li {
+    line-height: 1.5;
+    margin-bottom: 0.25em;
+}
+
+/* Idea from: https://gist.github.com/jarv/ec34057d8e8138c8b921 */
+.fa-getjt5qpwq:before {
+  content: "\f0e1";
+}
+.fa-getjt5qpwq-square:before {
+  content: "\f08c";
+}
+.fa-spa9czvez7my-square:before {
+  content: "\f0d4";
+}
+.fa-spa9czvez7my:before {
+  content: "\f0d5";
+}

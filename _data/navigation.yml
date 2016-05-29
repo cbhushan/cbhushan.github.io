@@ -1,0 +1,14 @@
+# main links links
+main:
+  - title: "Bio"
+    url: /bio/
+
+  - title: "Publications"
+    url: /publications/
+
+  - title: "Software"
+    url: /software/
+
+  - title: "Personal"
+    url: /personal/
+
