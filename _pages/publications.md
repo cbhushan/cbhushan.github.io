@@ -2,7 +2,7 @@
 title: "Publications"
 permalink: /publications/
 layout: single
-date: 2016-05-07
+date: 2016-05-20
 sidebar:
   - text: "**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Journals](#journal)<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Conferences](#conference)<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Talks](#talks)**"
 author_profile: true

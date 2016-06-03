@@ -3,12 +3,12 @@ title: "Education"
 permalink: /bio/
 layout: single
 author_profile: true
-date: 2016-05-07
+date: 2016-05-20
 ---
 
 
 * **Doctor of Philosophy (Ph.D.)** in Electrical Engineering, [University of Southern California](http://www.usc.edu/).<br />
- Dissertation: [<i class="fa fa-file-pdf-o" aria-hidden="true"></i> Correction, coregistration and connectivity analysis of multi-contrast brain MRI](http://sipi.usc.edu/reports/pdfs/Originals/USC-SIPI-427.pdf).
+ Dissertation: [<i class="fa fa-file-pdf-o" aria-hidden="true"></i> Correction, coregistration and connectivity analysis of multi-contrast brain MRI](http://neuroimage.usc.edu/~chitresh/files/chitresh_bhushan_dissertation_small.pdf).
 
 * **Master of Technology (M.Tech.)** in Electronics and Electrical Communication Engineering, [IIT Kharagpur, India](http://iitkgp.ac.in/).
  Thesis: Simple human motion recognition for video surveillance.
@@ -23,7 +23,7 @@ date: 2016-05-07
  Working on [cutting edge biomedical image analysis and acqusition](http://www.geglobalresearch.com/innovation/healthcare).
 
 * **Research Assistant**, [Biomedical Imaging Group, USC](http://neuroimage.usc.edu/neuro) (2010 -- 2016)<br />
- Developed several novel methods for MRI brain image correction, coregistration and connectivity analysis. See [publication](/publications/) and [software](/software/) page for more details.
+ Developed several novel methods for [MRI brain image artifact correction, coregistration and connectivity analysis](http://neuroimage.usc.edu/~chitresh/files/chitresh_bhushan_dissertation_small.pdf). Also see [publication](/publications/) and [software](/software/) page for more details.
 
 * **Student Intern**, Automation Systems Lab, CSIRO, Brisbane, Australia (May -- July, 2008)<br />
  Worked on real-Time edge detection on 3D range data.
