@@ -1,4 +1,10 @@
+/* Add link-color to navigation */
+.greedy-nav a {
+    color: #52adc8 !important; /*was #7a8288*/
+}
 
+
+/* Fix for home page */
 a.hm1-profile:link, a.hm1-profile:visited {
     text-decoration: none;
     color: #494e52;
