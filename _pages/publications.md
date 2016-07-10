@@ -2,7 +2,7 @@
 title: "Publications"
 permalink: /publications/
 layout: single
-date: 2016-05-20
+date: 2016-07-09
 sidebar:
   - text: "**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Journals](#journal)<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Conferences](#conference)<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Talks](#talks)**"
 author_profile: true
@@ -11,6 +11,8 @@ author_profile: true
 You can also browse my [<i class="ai ai-google-scholar ai-lg" aria-hidden="true"></i>Google Scholar profile](https://scholar.google.com/citations?user=wEBztaQAAAAJ&hl=en).
 
 ## Journal Articles<a name="journal"></a>
+
+* <u>C Bhushan</u>, M Chong, S Choi, AA Joshi, JP Haldar, H Damasio, RM Leahy, **[Temporal Non-Local Means Filtering Reveals Real-Time Whole-Brain Cortical Interactions in Resting fMRI](http://dx.doi.org/10.1371/journal.pone.0158504)**, PLoS ONE 11(7): e0158504 (2016), [<i class="fa fa-external-link-square" aria-hidden="true"></i> YouTube Video](https://youtu.be/y1GnXFVf2MQ), [<i class="fa fa-external-link-square" aria-hidden="true"></i> Matlab Code](http://neuroimage.usc.edu/neuro/tNLM).
 
 * <u>C Bhushan</u>, JP Haldar, S Choi, AA Joshi, DW Shattuck, RM Leahy, **[Co-registration and distortion correction of diffusion and anatomical images based on inverse contrast normalization](http://dx.doi.org/10.1016/j.neuroimage.2015.03.050)**, NeuroImage, 115: 269-280 (2015), [<i class="fa fa-external-link-square" aria-hidden="true"></i> Software implementation](http://brainsuite.org/processing/diffusion/).
 
