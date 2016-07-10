@@ -3,10 +3,18 @@ title: "Software"
 permalink: /software/
 layout: single
 author_profile: false
-date: 2016-05-07
+date: 2016-07-09
 header:
   overlay_color: "#000"
 excerpt: "\"_Talk is cheap. Show me the code._\" -- [Linus Torvalds](http://lkml.org/lkml/2000/8/25/132)"
+tnlm:
+  - image_path: tNLM.jpg
+    alt: "tNLM output"
+    title: "tNLM: Temporal non-local means filtering for resting fMRI"
+    excerpt: '<ul class="zero-size"><li>Filters fMRI data without spatial blurring</li><li>Allows direct visualization of BOLD activity</li><li>Improves reliability of cortical parcellation</li><li>Implemented as a MATLAB function</li><li>Open-source under GNU GPL-2.0 License</li></ul>'
+    url: "http://neuroimage.usc.edu/neuro/tNLM"
+    btn_label: "Learn more and Download"
+    btn_class: "btn--inverse"
 bdp:
   - image_path: http://neuroimage.usc.edu/~chitresh/images/bdp2crp2.png
     alt: "BDP output"
@@ -61,6 +69,8 @@ Several of the published (& unpublished) methods, which I worked on during my gr
 
 
 {% include feature_row id="bdp" type="left" %}
+
+{% include feature_row id="tnlm" type="left" %}
 
 {% include feature_row id="ipedcorrect" type="left" %}
 
