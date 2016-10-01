@@ -26,12 +26,12 @@ date: 2016-05-20
  Developed several novel methods for [MRI brain image artifact correction, coregistration and connectivity analysis](http://neuroimage.usc.edu/~chitresh/files/chitresh_bhushan_dissertation_small.pdf). Also see [publication](/publications/) and [software](/software/) page for more details.
 
 * **Student Intern**, Automation Systems Lab, CSIRO, Brisbane, Australia (May -- July, 2008)<br />
- Worked on real-Time edge detection on 3D range data.
+ Worked on [real-Time edge detection on 3D range data](/ugprojects/#EdgeDetectionRangeData).
 
 * **Teaching Assistant**, Introduction to Electronics, IIT Kharagpur (Autumn 2009)
 
 * **Student Researcher**, IIT Kharagpur (2007 -- 2010)<br/>
- Worked on various projects including "Investigation of Photosensitive Epilepsy", "Ultrasound Image Segmentation".
+ Worked on various projects including "Investigation of Photosensitive Epilepsy", "Ultrasound Image Segmentation". More details on my [undergraduate project](/ugprojects/) and [oil-paint page](/oil-paint/).
 
 
 # Awards

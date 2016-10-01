@@ -42,7 +42,7 @@ Our results suggest that when perturbed by potentially epileptic-triggering stim
 The study was performed under guidance of [Prof. Joydeep Bhattacharya, Goldsmiths, University of London](http://www.gold.ac.uk/psychology/staff/bhattacharya/) and [Prof. Goutam Saha, IIT Kharagpur, India](http://www.ecdept.iitkgp.ernet.in/index.php/home/faculty/gsaha). This study resulted in a journal paper titled "**[Investigating Neuromagnetic Brain Responses against Chromatic Flickering Stimuli by Wavelet Entropies](http://www.plosone.org/article/info:doi/10.1371/journal.pone.0007173)**", published in Public Library of Science (PLoS ONE).
 
 
-# Real-Time Edge Detection on 3D Range Data    (May -- July, 2008)
+# Real-Time Edge Detection on 3D Range Data    (May -- July, 2008)<a name="EdgeDetectionRangeData"></a>
 <figure class="align-left">
   <a href="http://neuroimage.usc.edu/~chitresh/papers/CSIRO_talk_chitresh.pdf"><img src="{{ site.url }}{{ site.baseurl }}/images/lidar_edge_2.png" alt="">
   <figcaption>Edges detected (in red) from range data</figcaption></a>
