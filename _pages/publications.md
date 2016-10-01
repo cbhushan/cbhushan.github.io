@@ -27,9 +27,9 @@ You can also browse my [<i class="ai ai-google-scholar ai-lg" aria-hidden="true"
 
 ## Conference Proceedings<a name="conference"></a>
 
-* <u>C Bhushan</u>, M Chong, S Choi, AA Joshi, JP Haldar, H Damasio, RM Leahy, **[Non-local means filtering for cortical parcellation of resting fMRI](#)**, Annual meeting of Organization for Human Brain Mapping (OHBM), Geneva, Switzerland, p. 2294 (2016).
+* <u>C Bhushan</u>, M Chong, S Choi, AA Joshi, JP Haldar, H Damasio, RM Leahy, **[Non-local means filtering for cortical parcellation of resting fMRI](https://ww5.aievolution.com/hbm1601/index.cfm?do=abs.viewAbs&abs=2086)**, Annual meeting of Organization for Human Brain Mapping (OHBM), Geneva, Switzerland, p. 2194 (2016), [<i class="fa fa-file-pdf-o" aria-hidden="true"></i> Poster PDF](http://neuroimage.usc.edu/~chitresh/papers/Bhushan_tNLM_filtering_cortical_parcellation_resting_fMRI.pdf).
 
-* M Chong, <u>C Bhushan</u>, AA Joshi, JP Haldar, RN Spreng, RM Leahy, **[Individual performance of resting fMRI parcellation with group connectivity priors](#)**, Annual meeting of Organization for Human Brain Mapping (OHBM), Geneva, Switzerland, p. 4440 (2016).
+* M Chong, <u>C Bhushan</u>, AA Joshi, JP Haldar, RN Spreng, RM Leahy, **[Individual performance of resting fMRI parcellation with group connectivity priors](https://ww5.aievolution.com/hbm1601/index.cfm?do=abs.viewAbs&abs=4056)**, Annual meeting of Organization for Human Brain Mapping (OHBM), Geneva, Switzerland, p. 2214 (2016).
 
 * AA Joshi, R Salloum, <u>C Bhushan</u>, RM Leahy, **[Measuring asymmetric interactions in resting state brain networks](http://dx.doi.org/10.1007/978-3-319-19992-4_31)**, Information Processing in Medical Imaging (IPMI), 24:399-410 (2015), [<i class="fa fa-file-pdf-o" aria-hidden="true"></i> PDF](http://neuroimage.usc.edu/~chitresh/papers/joshi_2015_necessity_IPMI.pdf).
 
