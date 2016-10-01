@@ -6,7 +6,7 @@ author_profile: false
 date: 2016-07-09
 ---
 
-![image-right](http://www-scf.usc.edu/~cbhushan/images/chitresh_oil.gif){: .align-right}
+![image-right](http://neuroimage.usc.edu/~chitresh/images/chitresh_oil.gif){: .align-right}
 
 I love to play with images. The effect shown in the animation (on right) is called Oil-Paint effect. Though there are numerous softwares and plugins available which use different algorithms to achieve this oil-painting effect, I have developed this particular algorithm on my own following my intuitions. Other commonly known algorithms (probably better & efficient as well) are shown in 'similar algorithms' section below.
 
