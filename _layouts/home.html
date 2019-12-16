@@ -1,0 +1,43 @@
+---
+layout: splash
+date: 2019-12-12
+author_profile: false
+---
+
+{% if page.author %}
+  {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.author %}
+{% endif %}
+
+<div class="feature__item--center">
+  <div class="archive__item">
+    <div class="archive__item-teaser" style="margin-top:0.8em; margin-bottom:0.8em"> 
+      <img src="{{ "/assets/images/c5-home.jpg" }}" style="border-radius:50%;max-width:380px;" alt="{{ author.name }}">
+    </div>
+  </div>
+</div>
+
+
+<div align="center">
+  <h1 class="author__name">{{ author.name }}, Ph.D.</h1>
+  <p class="author__bio">Lead Scientist, Medical Imaging & Computer Vision,
+    <br><a href="https://www.ge.com/research/technology-domains/artificial-intelligence">Artificial Intelligence, GE Research</a>
+    <br>Niskayuna, New York, USA</p>
+
+  <p>
+    <a href="/bio/" class="btn btn--info">Profile</a>
+    <a href="/publications/" class="btn btn--info">Publications</a>
+    <a href="/software/" class="btn btn--info">Software</a>
+    <a href="/posts/" class="btn btn--info">Blog</a>
+  </p>
+
+  <p><i class="fa fa-fw fa-envelope" aria-hidden="true"></i> Email: <img src="{{ "yqf1.png" | prepend: "/assets/images/" }}" alt="firstname.lastname"><img src="{{ "uwg2.png" | prepend: "/assets/images/" }}" alt="@ gmail.com"><br>
+
+    <a class="hm1-profile" href="https://scholar.google.com/citations?user=wEBztaQAAAAJ&hl=en"><i class="ai ai-google-scholar ai-lg" aria-hidden="true"></i></a><a href="https://scholar.google.com/citations?user=wEBztaQAAAAJ&hl=en">Google Scholar</a> &nbsp;&bull;&nbsp;
+
+    <a class="hm1-profile" href="https://github.com/cbhushan"><i class="fab fa-lg fa-github" aria-hidden="true"></i></a><a href="https://github.com/cbhushan"> Github</a> &nbsp;&bull;&nbsp;
+
+    <a class="hm1-profile" href="https://www.linkedin.com/in/chitreshbhushan"><i class="fab fa-lg fa-linkedin" aria-hidden="true"></i></a><a href="https://www.linkedin.com/in/chitreshbhushan"> LinkedIn</a> &nbsp;&bull;&nbsp;
+
+    <a class="hm1-profile" href="https://www.ge.com/research/people/chitresh-bhushan"><i class="fas fa-briefcase" aria-hidden="true"></i></a><a href="https://www.ge.com/research/people/chitresh-bhushan"> GE Profile</a>
+  </p>
+</div>

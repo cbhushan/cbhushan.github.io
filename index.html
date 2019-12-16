@@ -1,39 +1,7 @@
 ---
-layout: splash
-date: 2018-07-20
-author_profile: false
+# You don't need to edit this file, it's empty on purpose.
+# Edit theme's home layout instead if you wanna make some changes
+# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+layout: home
+author_profile: true
 ---
-
-{% include base_path %}
-
-{% if page.author %}
-  {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.author %}
-{% endif %}
-
-<div class="feature__item--center" style="margin-top:-0.8em; margin-bottom:0.2em">
-  <div class="archive__item">
-    <div class="archive__item-teaser"> 
-      <img src="{{ "c5-home.jpg" | prepend: "/images/" | prepend: base_path }}" style="border-radius:50%;max-width:380px;" alt="{{ author.name }}">
-    </div>
-  </div>
-</div>
-
-<div align="center">
-  <h2 class="author__name">{{ author.name }}, Ph.D.</h2>
-  <p class="author__bio">Medical Image Analysis Scientist, <a href="http://www.geglobalresearch.com/">GE Global Research</a><br>Niskayuna, New York, USA</p>
-
-  <p>
-    <a href="/bio/" class="btn btn--info">Profile</a>
-    <a href="/publications/" class="btn btn--info">Publications</a>
-    <a href="/software/" class="btn btn--info">Software</a>
-    <a href="/personal/" class="btn btn--info">Personal</a>
-  </p>
-
-  <p><i class="fa fa-fw fa-envelope" aria-hidden="true"></i> Email: <img src="{{ "yqf1.png" | prepend: "/images/" | prepend: base_path }}" alt="firstname.lastname"><img src="{{ "uwg2.png" | prepend: "/images/" | prepend: base_path }}" alt="@ gmail.com"><br>
-
-    <a class="hm1-profile" href="https://scholar.google.com/citations?user=wEBztaQAAAAJ&hl=en"><i class="ai ai-google-scholar ai-lg" aria-hidden="true"></i></a><a href="https://scholar.google.com/citations?user=wEBztaQAAAAJ&hl=en">Google Scholar</a> &nbsp;&bull;&nbsp;
-    <a class="hm1-profile" href="https://github.com/cbhushan"><i class="fa fa-lg fa-github" aria-hidden="true"></i></a><a href="https://github.com/cbhushan"> Github</a> &nbsp;&bull;&nbsp;
-    <a class="hm1-profile" href="https://www.linkedin.com/in/chitreshbhushan"><i class="fa fa-getjt5qpwq-square fa-lg" aria-hidden="true"></i></a><a href="https://www.linkedin.com/in/chitreshbhushan"> LinkedIn</a> &nbsp;&bull;&nbsp;
-    <a class="hm1-profile" href="https://plus.google.com/+ChitreshBhushan"><i class="fa fa-spa9czvez7my fa-lg" aria-hidden="true"></i></a><a href="https://plus.google.com/+ChitreshBhushan"> Google+</a>
-  </p>
-</div>

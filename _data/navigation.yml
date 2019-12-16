@@ -12,5 +12,5 @@ main:
   - title: "Personal"
     url: /personal/
 
-  - title: "Sitemap"
-    url: /sitemap/
+  - title: "Blog"
+    url: /posts/

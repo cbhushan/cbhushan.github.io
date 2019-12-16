@@ -2,8 +2,8 @@
 title: "Oil-Paint Filter"
 permalink: /oil-paint/
 layout: single
-author_profile: false
-date: 2016-07-09
+classes: wide
+date: 2019-07-09
 ---
 
 ![image-right](http://neuroimage.usc.edu/~chitresh/images/chitresh_oil.gif){: .align-right}
@@ -15,7 +15,9 @@ The basic idea is to somehow digitally imitate the strokes of a brush used by a 
 Contrary to oil-paintings, digital images captured by digital cameras have very fine details, pertaining to highly sensitive [CCD or CMOS image sensors](http://en.wikipedia.org/wiki/Image_sensor). So, basically high details have to be removed to achieve the oil-paint effect. One way to achieve this is to approximate small regions of image with a color or intensity, which represents the region best estimate. Thus the resulting image will have patches of regions with same color or intensity. To remove even more details, size of the region can be increased. Another less intuitive method, to remove more details, can be to decrease the depth (intensity levels) of the image and re-sample the image in lower depth. I have combined both the methods to get better results.
 
 # Details
-For each pixel of input image, a region of radius *r* is taken and a representative color/intensity is calculated for that region. This representative value corresponds the color/intensity value of the corresponding pixel of final output image. In order to calculate the representative value, the image is first down-sampled to, say, *L* levels. Colored images are first converted to greyscale for processing. Next, most  frequent occurring intensity, in the specified region of down-sampled image, is calculated. The original intensity level corresponding this most frequent occurring down-sampled intensity gives the representative intensity of the region. For color images, the original R,G,B values are the representative color. The same method is repeated for each pixel of the image. Changing the value of radius *r* and number of intensity levels *L* gives different levels of oil-painted image. The explained algorithms is implemented in matlab -- [source m-file](http://neuroimage.usc.edu/~chitresh/files/OilPaint.m).
+For each pixel of input image, a region of radius *r* is taken and a representative color/intensity is calculated for that region. This representative value corresponds the color/intensity value of the corresponding pixel of final output image. In order to calculate the representative value, the image is first down-sampled to, say, *L* levels. Colored images are first converted to greyscale for processing. Next, most  frequent occurring intensity, in the specified region of down-sampled image, is calculated. The original intensity level corresponding this most frequent occurring down-sampled intensity gives the representative intensity of the region. For color images, the original R,G,B values are the representative color. The same method is repeated for each pixel of the image. Changing the value of radius *r* and number of intensity levels *L* gives different levels of oil-painted image. 
+
+The explained algorithms is implemented in matlab: [source code file](http://neuroimage.usc.edu/~chitresh/files/OilPaint.m){: .btn .btn--info}
 
 Some results are shown below.
 
@@ -25,7 +27,7 @@ Some results are shown below.
 
 Different output images, corresponding to different values of *r* and *L*, were joined to form the above animation. FastStone Image Viewer was used to join the images to form an animated gif. Another example is given below. Note the absence of details in the processed image.
 
-| <img border="0" src="http://neuroimage.usc.edu/~chitresh/images/bricks.jpg" /> | <img border="0" src="http://neuroimage.usc.edu/~chitresh/images/bricks_oil_paint.jpg" /> |
+| <img border="0" src="/assets/images/bricks.jpg" /> | <img border="0" src="/assets/images/bricks_oil_paint.jpg" /> |
 | Original Image | After Processing, r = 3, L = 20 |
 
 #  Similar Algorithms

@@ -1,8 +1,24 @@
+/* Minify this CSS & add as custom.min.css. 
+   Use online tools like:
+    https://cssminifier.com/ 
+    https://www.cleancss.com/css-minify/ 
+*/
+
+/* Remove underline from all links */
+a {
+    text-decoration: none;
+}
+
 /* Add link-color to navigation */
 .greedy-nav a {
     color: #52adc8 !important; /*was #7a8288*/
+    font-weight:bold;
 }
 
+/* center align footer */
+.page__footer-copyright {
+    text-align: center
+}
 
 /* Fix for home page */
 a.hm1-profile:link, a.hm1-profile:visited {
@@ -13,47 +29,3 @@ a.hm1-profile:link, a.hm1-profile:visited {
 a.hm1-profile:hover, a.hm1-profile:visited {
     text-decoration: underline;
 }
-
-/* Fix for software page */
-.feature__item--left .archive__item-body {
-    padding-left: 3.23% !important;
-    padding-right: 0.4% !important;
-}
-
-.feature__item--left .archive__item-body h2 {
-    margin-top: 1.5em !important;
-}
-
-ul.zero-size {
-    margin: 1.0% 0 4.0% 0;
-    padding-left: 5.0%;
-}
-ul.zero-size li {
-    line-height: 1.5;
-    margin-bottom: 0.25em;
-}
-
-/* Idea from: https://gist.github.com/jarv/ec34057d8e8138c8b921 */
-.fa-getjt5qpwq:before {
-  content: "\f0e1";
-}
-.fa-getjt5qpwq-square:before {
-  content: "\f08c";
-}
-.fa-spa9czvez7my-square:before {
-  content: "\f0d4";
-}
-.fa-spa9czvez7my:before {
-  content: "\f0d5";
-}
-
-
-ul.tree, ul.tree ul { list-style-type: none; }
-ul.tree, ul.tree ul { list-style-type: none; background: url('/images/vline.png') repeat-y; margin: 0; padding: 0; }
-ul.tree ul { margin-left: 10px; } 
-ul.tree li { margin: 0; padding: 0 12px; }
-ul.tree li { margin: 0; padding: 0 12px; line-height: 20px; background: url('/images/node.png') no-repeat; }
-ul.tree li.last { background: #fff url('/images/lastnode.png') no-repeat; }
-
-
-
