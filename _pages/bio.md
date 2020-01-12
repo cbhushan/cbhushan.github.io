@@ -37,8 +37,18 @@ date: 2019-11-18
 
 
 # Awards
-- Impact Award (#Bravo), GE Global Research, Niskayuna, NY (2018)
-- Above & Beyond Bronze award, GE Global Research, Niskayuna, NY (2017)
+
+- Impact Award **#Spotlight**, GE Research, Niskayuna, NY (Nov 2019)
+- Patent - Impact Award, GE Research, Niskayuna, NY (Oct 2019)
+- Impact Award **#Spotlight**, GE Research, Niskayuna, NY (Sept 2019)
+- Impact Award **#Bravo**, GE Research, Niskayuna, NY (Mar 2019)
+- Impact Award **#Encore**, GE Global Research, Niskayuna, NY (Dec 2018)
+- Patent - Impact Award, GE Global Research, Niskayuna, NY (Dec 2018)
+- Impact Award **#Spotlight**, GE Global Research, Niskayuna, NY (Nov 2018)
+- Patent - Impact Award, GE Global Research, Niskayuna, NY (Nov 2018)
+- Impact Award **#Applause**, GE Global Research, Niskayuna, NY (Sept 2018)
+- Impact Award **#Bravo**, GE Global Research, Niskayuna, NY (July, 2018)
+- Above & Beyond **Bronze** award, GE Global Research, Niskayuna, NY (2017)
 - [<i class="fa fa-file-pdf" aria-hidden="true"></i> Honorable mention for Best poster award](http://neuroimage.usc.edu/~chitresh/papers/bhushan_2014_INVERSION_MHI_Poster.pdf), 5th Annual Electrical Engineering Research Festival, USC, 2014
 - [<i class="fa fa-file-pdf" aria-hidden="true"></i> Magna Cum Laude Merit Award & Trainee Stipend](http://neuroimage.usc.edu/~chitresh/papers/ISMRM13_award_chitresh.pdf), Annual Scientific Meeting, ISMRM, Salt Lake City, Utah, USA
 - USC Annenberg Graduate Fellowship (2010-2014)

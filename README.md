@@ -40,8 +40,10 @@ Quick-steps:
 $ docker build -t mmistakes:github .
 
 # use image to serve website
-docker run --rm --volume=/path/to/cbhushan.github.io:/srv/jekyll -p 4444:4000 mmistakes:github bundle install && bundle update && bundle exec jekyll serve --host=0.0.0.0
+docker run --rm --volume=/path/to/cbhushan.github.io:/srv/jekyll -p 4444:4000 mmistakes:github bundle install && bundle exec jekyll serve --host=0.0.0.0
 ```
 
 After this website should be served at http://localhost:4444/.
 Make sure to disable any type of adblocker etc. for localhost
+
+To update Gems, run `bundle update` before `bundle exec jekyll serve ...` command above. 

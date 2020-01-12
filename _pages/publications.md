@@ -13,8 +13,10 @@ You can also browse my [<i class="ai ai-google-scholar ai-lg" aria-hidden="true"
 
 ## Peer-Reviewed Articles<a name="papers"></a>
 
+* (2020) EK Tan, <u>C Bhushan</u>, et al. **Oscillating Diffusion-Encoding with a High Gradient-Amplitude and High Slew-Rate Head-Only Gradient for Human Brain Imaging**, Magnetic Resonance in Medicine, DOI:10.1002/mrm.28180 (2020)
 
-* (2019) V Cotero, Y Fan, T Tsaava, AM Kressel, I Hancu, P Fitzgerald, K Wallace, S Kaanumalle, J Graf, W Rigby, T Kao, J Roberts, <u>C Bhushan</u>, S Joel, TR Coleman, S Zanos, KJ Tracey, J Ashe, SS Chavan, C Puleo, **[Noninvasive sub-organ ultrasound stimulation for targeted neuromodulation](https://doi.org/10.1038/s41467-019-08750-9)**. Nature Communications 10, 952 (2019), [<i class="fa fa-file-pdf" aria-hidden="true"></i> Full-text PDF](https://www.nature.com/articles/s41467-019-08750-9.pdf)
+
+* (2019) V Cotero, Y Fan, T Tsaava, AM Kressel, I Hancu, P Fitzgerald, K Wallace, S Kaanumalle, J Graf, W Rigby, T Kao, J Roberts, <u>C Bhushan</u>, S Joel, TR Coleman, S Zanos, KJ Tracey, J Ashe, SS Chavan, C Puleo, **[Noninvasive sub-organ ultrasound stimulation for targeted neuromodulation](https://doi.org/10.1038/s41467-019-08750-9)**, Nature Communications 10, 952 (2019), [<i class="fa fa-file-pdf" aria-hidden="true"></i> Full-text PDF](https://www.nature.com/articles/s41467-019-08750-9.pdf)
 
 * (2019) AA Maximo, <u>C Bhushan</u>, **[Conditional adversarial network for segmentation with simple loss function](https://cds.ismrm.org/protected/19MPresentations/abstracts/4737.html)**, ISMRM 27th Annual Meeting & Exhibition, Montréal, QC, Canada, p. 4737 (2019), [<i class="fa fa-file-pdf" aria-hidden="true"></i> Full-text PDF](https://neuroimage.usc.edu/~chitresh/papers/ismrm_2019_cGAN_segmentation_loss_fn.pdf)
 
