@@ -3,7 +3,7 @@ title: "Experience"
 permalink: /bio/
 layout: single
 classes: wide
-date: 2019-11-18
+date: 2020-1-10
 ---
 
 * **Lead Scientist**, [GE Research](https://www.ge.com/research/), Niskayuna, NY, USA (2019 -- present)<br />

@@ -3,7 +3,7 @@ title: "Publications"
 permalink: /publications/
 layout: single
 classes: wide
-date: 2019-12-18
+date: 2020-1-10
 sidebar:
   - text: "**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Papers](#papers)<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Talks](#talks)**"
 author_profile: true
