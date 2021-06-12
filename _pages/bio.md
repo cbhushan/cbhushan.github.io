@@ -3,7 +3,7 @@ title: "Experience"
 permalink: /bio/
 layout: single
 classes: wide
-date: 2020-1-10
+date: 2021-6-10
 ---
 
 * **Lead Scientist**, [GE Research](https://www.ge.com/research/), Niskayuna, NY, USA (2019 -- present)<br />
@@ -38,6 +38,14 @@ date: 2020-1-10
 
 # Awards
 
+- **Whitney Award**, GE Research Tech Award (Oct 2020)
+- Patent - Impact Award, GE Research, Niskayuna, NY (Apr 2021)
+- Patent - Impact Award, GE Research, Niskayuna, NY (Jan 2021)
+- 2 x Impact Award **#Spotlight**, GE Research, Niskayuna, NY (Feb 2020)
+- Patent - Impact Award, GE Research, Niskayuna, NY (Dec 2020)
+- Impact Award **#Appreciate**, GE Research, Niskayuna, NY (Dec 2020)
+- Patent - Impact Award, GE Research, Niskayuna, NY (Jan 2020)
+- Impact Award **#Spotlight**, GE Research, Niskayuna, NY (Dec 2019)
 - Impact Award **#Spotlight**, GE Research, Niskayuna, NY (Nov 2019)
 - Patent - Impact Award, GE Research, Niskayuna, NY (Oct 2019)
 - Impact Award **#Spotlight**, GE Research, Niskayuna, NY (Sept 2019)
@@ -56,3 +64,28 @@ date: 2020-1-10
 - Gold Medal for outstanding performance in Computer Science, 12th Grade, RKMV, Deoghar, India
 
 
+# Professional Services
+
+- Program Committee, 33rd Annual Conference on Innovative Applications of Artificial Intelligence (IAAI-21)
+- Invited grant reviewer for Foundation for Polish Science
+- Reviewer for:
+  - IEEE Transactions in Medical Imaging IEEE TMI
+  - Journal of Magnetic Resonance Imaging (JMRI)
+  - International Journal of Computer Assisted Radiology and Surgery (IJCARS)
+  - NeuroImage
+  - Frontiers in Neuroscience
+  - IEEE Journal of Biomedical and Health Informatics
+  - PlosOne
+  - Medical Image Computing and Computer Assisted Intervention (MICCAI) Society
+
+
+- Professional memberships
+  - IEEE Member
+  - IEEE Signal Processing Society Member
+
+
+# Other profiles
+
+- [Google Scholar](https://scholar.google.com/citations?user=wEBztaQAAAAJ&hl=en)
+- ORCID iD: [0000-0002-2935-2515](https://orcid.org/0000-0002-2935-2515)
+- [ResearchGate](https://www.researchgate.net/profile/Chitresh-Bhushan)
