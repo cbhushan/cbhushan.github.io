@@ -18,11 +18,11 @@ You can also browse my [<i class="ai ai-google-scholar ai-lg" aria-hidden="true"
 {: .text-justify}
 55. (2021) K Gandomi, P Carvalho, M Tarasek, E Fiveland, <u>C Bhushan</u>, E Williams, P Neubauer et al. **[Modeling of Interstitial Ultrasound Ablation for Continuous Applicator Rotation with MR Validation](https://doi.org/10.1109/tbme.2020.3023849)**. IEEE Transactions on Biomedical Engineering, 68(6):1838-1846, DOI: 10.1109/TBME.2020.3023849, **[Featured Article](https://www.embs.org/tbme/articles/modeling-of-interstitial-ultrasound-ablation-for-continuous-applicator-rotation-with-mr-validation/)**, [<i class="ai ai-pubmed ai-lg" aria-hidden="true"></i> PMID: 32924937](https://pubmed.ncbi.nlm.nih.gov/32924937/)
 
-54. (2021) D Anand, DD Shanbhag, P Shankpal, <u>C Bhushan</u>, DTB Yeo, TK Foo, R Madhavan, **[Data augmentation using features from activation maps improved performance for deep learning based automated knee prescription](https://neuroimage.usc.edu/~chitresh/papers/ISMRM_2021_data_augment_activation_map.pdf)**, ISMRM & SMRT Annual Meeting & Exhibition, p. 0811, (2021)
+54. (2021) D Anand, DD Shanbhag, P Shankpal, <u>C Bhushan</u>, DTB Yeo, TK Foo, R Madhavan, **[Data augmentation using features from activation maps improved performance for deep learning based automated knee prescription](https://neuroimage.usc.edu/~chitresh/papers/ismrm_2021_data_augment_activation_map.pdf)**, ISMRM & SMRT Annual Meeting & Exhibition, p. 0811, (2021)
 
-53. (2021) DD Shanbhag, A Sreekumari, S Ghose, <u>C Bhushan</u>, U Patil, **[Deep Learning based spine labeling with three-plane 2D localizers without vertebrae segmentation](https://neuroimage.usc.edu/~chitresh/papers/ISMRM_2021_DL_spine_labeling.pdf)**, ISMRM & SMRT Annual Meeting & Exhibition, p. 3812, (2021)
+53. (2021) DD Shanbhag, A Sreekumari, S Ghose, <u>C Bhushan</u>, U Patil, **[Deep Learning based spine labeling with three-plane 2D localizers without vertebrae segmentation](https://neuroimage.usc.edu/~chitresh/papers/ismrm_2021_DL_spine_labeling.pdf)**, ISMRM & SMRT Annual Meeting & Exhibition, p. 3812, (2021)
 
-52. (2021) A Zhu, JK DeMarco, RY Shih, R Madhavan, T Sprenger, <u>C Bhushan</u>, M Hood, L Marinelli, VB Ho, TK Foo, **[Oscillating Gradient Spin Echo-Based Time-dependent Diffusivity Reflects Regional Microstructure Differences in Human White Matter](https://neuroimage.usc.edu/~chitresh/papers/ISMRM_2021_ogse_white_matter.pdf)**, ISMRM & SMRT Annual Meeting & Exhibition, p. 3639 (2021)
+52. (2021) A Zhu, JK DeMarco, RY Shih, R Madhavan, T Sprenger, <u>C Bhushan</u>, M Hood, L Marinelli, VB Ho, TK Foo, **[Oscillating Gradient Spin Echo-Based Time-dependent Diffusivity Reflects Regional Microstructure Differences in Human White Matter](https://neuroimage.usc.edu/~chitresh/papers/ismrm_2021_ogse_white_matter.pdf)**, ISMRM & SMRT Annual Meeting & Exhibition, p. 3639 (2021)
 
 
 
