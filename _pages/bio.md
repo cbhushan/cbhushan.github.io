@@ -1,9 +1,10 @@
 ---
-title: "Experience"
+title: "Profile"
+excerpt: "Details of my educational and professional background"
 permalink: /bio/
 layout: single
 classes: wide
-date: 2021-6-10
+date: 2021-6-12
 ---
 
 * **Lead Scientist**, [GE Research](https://www.ge.com/research/), Niskayuna, NY, USA (2019 -- present)<br />

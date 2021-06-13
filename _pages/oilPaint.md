@@ -1,12 +1,13 @@
 ---
 title: "Oil-Paint Filter"
+excerpt: "Digitally imitate oil-painting"
 permalink: /oil-paint/
 layout: single
 classes: wide
 date: 2019-07-09
 ---
 
-![image-right](http://neuroimage.usc.edu/~chitresh/images/chitresh_oil.gif){: .align-right}
+![image-right](/assets/images/chitresh_oil.gif){: .align-right}
 
 I love to play with images. The effect shown in the animation (on right) is called Oil-Paint effect. Though there are numerous softwares and plugins available which use different algorithms to achieve this oil-painting effect, I have developed this particular algorithm on my own following my intuitions. Other commonly known algorithms (probably better & efficient as well) are shown in 'similar algorithms' section below.
 

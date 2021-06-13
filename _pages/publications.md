@@ -1,5 +1,6 @@
 ---
 title: "Publications"
+excerpt: "List of publications, patents, and talks"
 permalink: /publications/
 layout: single
 classes: wide
