@@ -27,7 +27,7 @@ repository: "cbhushan/cbhushan.github.io"
 
 # Build settings
 markdown: kramdown
-remote_theme: "mmistakes/minimal-mistakes@4.17.2"
+remote_theme: "mmistakes/minimal-mistakes@4.23.0"
 # Outputting
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
@@ -71,7 +71,7 @@ analytics:
 author:
   name   : "Chitresh Bhushan"
   avatar : "/assets/images/c5.jpg"
-  bio    : "Lead Scientist, GE Global Research"
+  bio    : "Lead Scientist, GE Research"
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
