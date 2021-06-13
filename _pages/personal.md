@@ -1,18 +1,19 @@
 ---
 title: "About me"
+excerpt: "Personal background and interests"
 permalink: /personal/
 layout: single
 classes: wide
-date: 2019-11-20
+date: 2021-06-12
 sketch-gallery:
-  - url: http://neuroimage.usc.edu/~chitresh/images/sketch-man.jpg
-    image_path: http://neuroimage.usc.edu/~chitresh/images/sketch-man.jpg
+  - url: /assets/images/sketch-man.jpg
+    image_path: /assets/images/sketch-man.jpg
     alt: "Sketch of a man"  
-  - url: http://neuroimage.usc.edu/~chitresh/images/colour_comp.jpg
-    image_path: http://neuroimage.usc.edu/~chitresh/images/colour_comp.jpg
+  - url: /assets/images/colour_comp.jpg
+    image_path: /assets/images/colour_comp.jpg
     alt: "Color composition"
-  - url: http://neuroimage.usc.edu/~chitresh/images/sketch-market-place.jpg
-    image_path: http://neuroimage.usc.edu/~chitresh/images/sketch-market-place.jpg
+  - url: /assets/images/sketch-market-place.jpg
+    image_path: /assets/images/sketch-market-place.jpg
     alt: "Market place sketch"
 ---
 

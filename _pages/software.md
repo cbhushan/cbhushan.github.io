@@ -16,7 +16,7 @@ tnlm:
     btn_label: "Learn more and Download"
     btn_class: "btn--info"
 bdp:
-  - image_path: http://neuroimage.usc.edu/~chitresh/images/bdp2crp2.png
+  - image_path: /assets/images/bdp2crp2.png
     alt: "BDP output"
     title: "BDP: BrainSuite Diffusion Pipeline"
     excerpt: '<ul class="zero-size"><li>Fuses anatomical & diffusion MRI images</li><li>Distortion correction with or without fieldmap</li><li>Several diffusion models (DTI, ODF, multi-shell)</li><li>Supported on Windows, Linux and Mac OS</li><li>Open-source under GNU GPL-2.0 License</li></ul>'
