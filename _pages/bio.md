@@ -7,8 +7,10 @@ classes: wide
 date: 2021-6-12
 ---
 
-* **Lead Scientist**, [GE Research](https://www.ge.com/research/), Niskayuna, NY, USA (2019 -- present)<br />
+* **Senior Scientist**, [GE Research](https://www.ge.com/research/), Niskayuna, NY, USA (2022 -- present)<br />
  Working on cutting-edge [medical-image analysis and artificial intelligence](https://www.ge.com/research/technology-domains/artificial-intelligence/computer-vision).
+
+* **Lead Scientist**, [GE Research](https://www.ge.com/research/), Niskayuna, NY, USA (2019 -- 2022)<br />
 
 * **Research Scientist**, [GE Global Research](https://www.ge.com/research/), Niskayuna, NY, USA (2016 -- 2019)<br />
 
